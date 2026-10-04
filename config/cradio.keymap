@@ -48,6 +48,40 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp RBKT>;
+        };
+        combo_lpar {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp LPAR>;
+        };
+        combo_rpar {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp RPAR>;
+        };
+        combo_lbrc {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp LBRC>;
+        };
+        combo_rbrc {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+            bindings = <&kp RBRC>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
