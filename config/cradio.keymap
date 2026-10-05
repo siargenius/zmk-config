@@ -80,6 +80,81 @@
             key-positions = <25 26>;
             bindings = <&kp RBRC>;
         };
+        combo_excl {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+            bindings = <&kp EXCL>;
+        };
+        combo_at {
+            timeout-ms = <50>;
+            key-positions = <1 11>;
+            bindings = <&kp AT>;
+        };
+        combo_hash {
+            timeout-ms = <50>;
+            key-positions = <2 12>;
+            bindings = <&kp HASH>;
+        };
+        combo_dllr {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+            bindings = <&kp DLLR>;
+        };
+        combo_prcnt {
+            timeout-ms = <50>;
+            key-positions = <4 14>;
+            bindings = <&kp PRCNT>;
+        };
+        combo_caret {
+            timeout-ms = <50>;
+            key-positions = <5 15>;
+            bindings = <&kp CARET>;
+        };
+        combo_amps {
+            timeout-ms = <50>;
+            key-positions = <6 16>;
+            bindings = <&kp AMPS>;
+        };
+        combo_astrk {
+            timeout-ms = <50>;
+            key-positions = <7 17>;
+            bindings = <&kp ASTRK>;
+        };
+        combo_minus {
+            timeout-ms = <50>;
+            key-positions = <15 25>;
+            bindings = <&kp MINUS>;
+        };
+        combo_under {
+            timeout-ms = <50>;
+            key-positions = <16 26>;
+            bindings = <&kp UNDER>;
+        };
+        combo_equal {
+            timeout-ms = <50>;
+            key-positions = <17 27>;
+            bindings = <&kp EQUAL>;
+        };
+        combo_plus {
+            timeout-ms = <50>;
+            key-positions = <18 28>;
+            bindings = <&kp PLUS>;
+        };
+        combo_bslh {
+            timeout-ms = <50>;
+            key-positions = <19 29>;
+            bindings = <&kp BSLH>;
+        };
+        combo_pipe {
+            timeout-ms = <50>;
+            key-positions = <8 18>;
+            bindings = <&kp PIPE>;
+        };
+        combo_tilde {
+            timeout-ms = <50>;
+            key-positions = <9 19>;
+            bindings = <&kp TILDE>;
+        };
     };
 
     keymap {
@@ -127,8 +202,8 @@
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
+        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │  `       │
+           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &kp GRAVE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
