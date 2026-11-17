@@ -18,9 +18,27 @@ still sends Shift + Escape. For modified deletion, hold the modifier before
 entering the thumb chord.
 
 Press both right thumbs together to toggle mouse mode. Release the thumbs to
-move, scroll, or click; press the combo again or tap the Escape thumb to exit.
-The existing media, Bluetooth, and Mac/Windows controls are on this same layer.
+move, scroll, or click. Press the combo again or tap the Escape thumb to exit.
+The left half keeps its typing bindings in mouse mode.
 Exiting mouse mode preserves the current Mac/Windows mode.
+
+Hold both left thumbs together to access the left-hand media, Bluetooth, and
+Mac/Windows controls. Press the thumbs within 50 ms of each other.
+Release either thumb to leave this layer. This gesture also works in mouse mode.
+
+| Position on the controls layer | Action |
+| --- | --- |
+| Q | Brightness up |
+| A | Brightness down |
+| Quote | Enter the right half's bootloader |
+| Z | Enter the left half's bootloader |
+| X | Clear Bluetooth pairing |
+| R | Select Bluetooth profile 4 |
+| V | Select Bluetooth profile 5 |
+
+Bluetooth profiles 4 and 5 keep their original R/V positions. The configuration
+provides six host profiles, numbered 0 to 5, plus the connection between halves.
+The volume and playback controls keep their existing positions.
 
 ## Symbol combos
 
@@ -30,14 +48,14 @@ The existing symbol combos remain, with these additions and relocations:
 | --- | --- |
 | P + quote | Colon `:` |
 | Quote + slash | Semicolon `;` |
-| Period + slash | Backslash `\` |
+| G + B | Backslash `\` |
 | O + L | Plus `+` |
 | L + period | Pipe `\|` |
 | A + Z | Backtick (grave) |
 | S + X | Tilde `~` |
 
 Combos use a 50 ms window and are active on the typing and thumb-Shift layers.
-They are disabled on the numbers/navigation and mouse layers.
+Symbol combos are disabled on the numbers/navigation, mouse, and controls layers.
 
 ## Modifier timing
 
@@ -65,6 +83,7 @@ GitHub Actions workflow or a ZMK v0.3 build environment. Before daily use, check
 - Every new symbol combo, including the ones on home-row modifier positions.
 - Mouse entry, exit by either method, diagonal movement, and dragging.
 - Mouse entry/exit while using the Windows Bluetooth profile.
+- Left-hand controls while both left thumbs are held, including brightness and profiles 4/5.
 
 Build success verifies firmware compatibility; the timings need a typing trial
 on the physical keyboard.
